@@ -1,0 +1,141 @@
+<%if @response==true %>
+<%session[:response]=false%>
+<script type="text/javascript">
+noty({text: 'Thanks for responding, I will get back to you as soon as i can', type: 'alert'});
+
+</script>
+<%end%>
+<%if @response=="empty" %>
+<%session[:response]=false%>
+<script type="text/javascript">
+noty({text: 'sorry you seem to have submitted an empty form', type: 'alert'});
+
+</script>
+<%end%>
+<section id="banner">
+  <div id="intro">
+<p class="animated fadeInLeft">Hi!<br /> I am Pranav Singhal</p>
+<%=image_tag "pranav.jpg",class: "animated fadeInDown"%>
+<!-- <img src="animal.jpg" alt="image goes here" /> -->
+<q class="animated fadeInRight">"The challenge of life, I have found, is to build a resume that doesn't simply tell a story about what you want to be,
+  but it's a story about who you want
+  to be."<br /><span>-Oprah Winfrey</span></q>
+  </div>
+</section>
+<header>
+  <nav>
+    <ul>
+      <li><a href="#aboutMeLink">About Me</a></li>
+      <li><a href="#whatIdoLink">What I do</a></li>
+      <li><a href="#educationLink">My Education</a></li>
+      <li><a href="#contactLink">Get in Touch</a></li>
+    </ul>
+  </nav>
+</header>
+<section id="aboutMe">
+  <span id="aboutMeLink"></span>
+  <h1 class="animated bounce infinite">About Me</h1>
+  <p>
+    I am a freelance web-developer and I love working with software-development. I have recently
+    started working with rails and in my opinion, it is the
+    best framework for web-developtment out there.
+    Besides that, I like reading. My favourite author is Ayn Rand.
+    I also like music and playing guitar. Hence, it should come as no surprise that I am
+    a huge Clapton fan!
+  </p>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<br /><br /><br /><br />
+
+</section>
+<section id="whatIdoForYou">
+  <span id="whatIdoLink"></span>
+  <h1 class="animated bounce infinite">What I Can do For You</h1>
+  <div id="div1">
+    <h6><i class="fa fa-cog" aria-hidden="true"></i></h6>
+
+  <h2>Languagues I Know</h2>
+  <p>
+  <i class="devicon-rails-plain-wordmark"></i>
+  <i class="devicon-ruby-plain-wordmark"></i>
+  <i class="devicon-html5-plain-wordmark"></i><br /><br />
+  <i class="devicon-css3-plain-wordmark"></i>
+  <i class="devicon-javascript-plain"></i>
+  <i class="devicon-wordpress-plain"></i>
+  <i class="devicon-jquery-plain-wordmark"></i>
+</p>
+</div>
+<div id="div2">
+  <h6><i class="fa fa-laptop" aria-hidden="true"></i></h6>
+  <h2>What I do</h2>
+  <p>I am a freelance web-developer. I specialize in ruby on rails.
+    I am looking to work with people who are in the initial stages of taking their bussinesses online and
+    need a web-developer.
+</p>
+
+</div>
+<div id="div3">
+  <h6><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></h6>
+  <h2>Why Choose Me</h2>
+  <p>I believe that rails is currently the best web-framework there is.
+  It allows for fast and efficient development and depolyment of websites so if you are a
+  bussiness that is just starting up, rails is the way to go.  </p>
+</div>
+
+</section>
+<section id="education">
+  <span id="educationLink"></span>
+  <h1 class="animated bounce infinite">My Educational Qualifications</h1>
+  <div>
+    <%=image_tag "ths.png"%>
+    <h2>High School</h2>
+    <p>The Heritage School</p>
+    <p>Rohini</p>
+    <p>New Delhi, 110085</p>
+    <p>India</p>
+  </div>
+  <div>
+    <%=image_tag "svc2.jpg", :id => "collegeImage"%>
+    <h2>College</h2>
+    <p>Sri Venkateswara College</p>
+    <p>Delhi University</p>
+    <p>New Delhi</p>
+    <p>India</p>
+  </div>
+
+</section>
+
+<section id="contact">
+  <br /><br /><br /><br />
+  <span id="contactLink"></span>
+  <h1 class="animated bounce infinite">Get In Touch</h1>
+  <div id="form">
+        <h6>Send Me a Message</h6>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <%=form_tag("/post", method: :post) do%>
+        <%=label_tag :name,nil,class: "mdl-textfield__label"%>
+        <%= text_field_tag :name,nil, class: "mdl-textfield__input"%>
+      </div><br />
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <%=label_tag :email,nil,class: "mdl-textfield__label"%>
+        <%= text_field_tag :email,nil,class: "mdl-textfield__input"%>
+    </div><br />
+    <div id="textfield" class="mdl-textfield mdl-js-textfield">
+        <%=label_tag :content,nil,class: "mdl-textfield__label"%>
+        <%= text_area_tag :content,nil, placeholder: "you message here...",class:"mdl-textfield__input"%>
+    </div><br />
+        <%=submit_tag "submit", class: "mdl-button mdl-js-button mdl-button--raised mdl-button--colored"%>
+      <%end%>
+  </div>
+  <div id="contactDetails">
+    <p id="social"><a href="https://www.facebook.com/pranav.lucifer"><i class="fa fa-facebook" aria-hidden="true"></i>
+    </a><a href="https://twitter.com/_pranav_singhal"><i class="fa fa-twitter" aria-hidden="true"></i>
+    </a><a href="https://github.com/pranav-singhal"><i class="fa fa-github" aria-hidden="true"></i>
+    </a></p>
+      <p><i class="fa fa-envelope-o" aria-hidden="true"></i>
+       prnv_singhal@yahoo.co.in</p>
+      <p><i class="fa fa-phone" aria-hidden="true"></i>
+       +91-9650906992</p>
+  </div>
+</section>

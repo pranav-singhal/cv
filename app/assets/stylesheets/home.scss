@@ -1,0 +1,327 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+section#banner{
+  color: white;
+  background-image: url("banner.jpg");
+   height: 500px;
+  //  width:100vw;
+   background-attachment: fixed;
+   background-attachment: -webkit-fixed;
+
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  div#intro{
+    overflow-x: hidden;
+    height: 500px;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    p{text-align: center;
+      line-height: 120%;
+      margin-left: 5vw;
+      font-size: 2.6em;
+      border-bottom: 5px solid #44c7f4;
+    }
+    q:before,q:after{content:''}
+    q{
+      line-height: 100%;
+      span{
+        font-size: 10px;
+
+      }
+      font-size: 2.0vw;
+      width: 30vw;
+      border-bottom: 2px solid #44c7f4;
+
+    }
+  }
+  img{
+    width:16vw;
+    height: 16vw;
+    margin-top: 0;
+    // margin-left: 45vw;
+    // margin-right:45vw;
+    border-radius:50%;
+  }
+
+}
+header{
+  z-index: 100;
+  a:link, a:visited{
+    text-decoration: none;
+    color: white;
+  }
+  a{
+    transition: 0.6s;
+    color:white;
+  }
+  a:hover{
+    transition: 0.08s;
+    color:blue;
+  }
+  height: 50px;
+  width: 100vw;
+  padding: 2vh 0 2vh 0;
+  position:sticky;
+  position:-webkit-sticky;
+
+  top: 0px;
+
+  background-color: #0d0e12;
+  background: -webkit-linear-gradient(bottom , #0d0e12, #9a9a9a);
+  nav{
+    ul{
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      li{
+        text-align: center;
+        border: 1px solid black;
+        border: none;
+        font-size: 1.6em;
+        // width:8vw;
+        height: 30px;
+      }
+    }
+  }
+
+}
+span{display: block;
+  width:100vw;
+  height: 50px;
+}
+section#aboutMe{
+  background-image: url("port.jpg");
+   height: 850px;
+  //  width:100vw;
+   background-attachment: fixed;
+   background-attachment:-webkit-fixed;
+
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   padding-top: 100px;
+
+  h1{
+    text-align: center;
+    color:white;
+  }
+
+  p{ margin:0 auto;
+    text-align: center;
+    width:50vw;
+    color:#d2d6da
+  }
+}
+
+section#whatIdoForYou{
+  background-image: url("serve.jpg");
+   height: inherit;
+  //  width:100vw;
+   background-attachment: fixed;
+   background-attachment: -webkit-fixed;
+
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  h1{
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+
+  div{
+
+    margin-top:40px;
+
+    h1,h2,h6{
+      text-align: center;
+      color: white;
+    }
+    h2{
+      font-size: 20px;
+      font-weight: bold;
+      color: #44c7f4;
+    }
+    h6{
+      margin-bottom: 20px;
+      color: white;
+
+    }
+    // position: relative;
+    // top:60px;
+    // display: inline-block;
+    width:30vw;
+    height: 500px;
+    p{
+      color:#d2d6da;
+      text-align: center;
+      margin-top: 20px;
+    }
+    i{
+      font-size: 50px;
+    }
+  }
+  div#div1{
+    width: 20vw;
+
+  }
+
+
+}
+section#education{
+  background-image: url("back.jpg");
+  //  height: 500px;
+   width:100vw;
+   background-attachment: fixed;
+   background-attachment: -webkit-fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  br{
+    width: 100%;
+  }
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  h1{
+    width: 100%;
+    text-align: center;
+    color:white;
+  }
+  div{
+    opacity: 0.6;
+    h2{
+      color:#44c7f4;
+    }
+    color:white;
+    padding-top: 60px;
+    margin-top: 20px;
+    width:30vw;
+    background-color:transparent;
+    height: 500px;
+    img{
+      width:10vw;
+      height: 10vw;
+      // border-radius: 50%;
+      margin: 2px 10vw;
+    }
+    img#collegeImage{
+
+    }
+    h2{
+      width: 100%;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      font-size: 1.6em;
+    }
+  }
+}
+
+section#contact{
+  background-image: url("contact.jpg");
+   height: 1100px;
+   width:100vw;
+   background-attachment: fixed;
+   background-attachment: -webkit-fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  h1{
+    text-align: center;
+    color: white;
+
+  }
+  div#form{
+    label{
+      color:white;
+    }
+    div#textfield {
+      width:40vw;
+    }
+    float: left;
+    margin-left: 4px;
+    width: 50vw;
+    h6{
+      text-align: center;
+      color:#44c7f4;
+    }
+    input[type="text"]{
+      color:white;
+    }
+    // margin:0 auto;
+    textarea{
+      // background-color: black;
+      width:40vw;
+      height:30vh;
+      color: white;
+    }
+
+  }
+  div#contactDetails{
+    a:link,a:visited{
+      text-decoration: none;
+      color: white;
+    }
+    a{
+      transition: 0.6s ease-in;
+      color:white;
+    }
+    a:hover{
+      transition: 0.08s ease-in;
+      color:lightblue;
+    }
+
+    width:46vw;
+    margin-right: 4px;
+    height:500px;
+    // border: 1px solid black;
+    float:right;
+
+  }
+
+  p{
+    color:white;
+    font-size: 30px;
+  }
+  p#social{
+    width: 100%;
+    text-align: center;
+    font-size: 6em;
+  }
+
+
+}
