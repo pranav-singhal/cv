@@ -368,5 +368,19 @@ section#contact{
     }
 
   }
+  section#education{
+    flex-direction: column;
+    div{
+      width: 100vw;
+      height:400px;
+      margin-top: 40px;
+      // margin-bottom: 30px;
+      img{
+        width:16vw;
+        height: 16vw;
+        margin: 0 42vw;
+      }
+    }
+  }
 
 }
