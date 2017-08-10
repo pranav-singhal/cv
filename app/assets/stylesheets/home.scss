@@ -311,12 +311,62 @@ section#contact{
 
 }
 
-@media(min-width: 720px){
-section#education, section#contact, section#whatIdoForYou, section#aboutMe, section#banner{
+@media (max-width: 740px) {
+  *{
+    overflow-x: hidden;
+  }
+  h1{
+    font-size: 8vw;
+  }
 
-    // background-size: 50%;
-    background-attachment: scroll;
-    background-position: top;
-    background-size: cover;
-   }
+  section#education, section#contact, section#whatIdoForYou, section#aboutMe, section#banner{
+
+      // background-size: 50%;
+      background-attachment: scroll;
+      background-position: top;
+      background-size: cover;
+  }
+  section#whatIdoForYou{
+    flex-direction: column;
+    justify-content: center;
+    div{
+      width:100vw;
+      margin: 0;
+      height: 400px;
+    }
+    div#div1{
+      width: 100vw;
+
+    }
+  }
+  div#intro{
+    flex-direction: column;
+    img{
+      width:30vw;
+      height:30vw;
+    }
+  }
+  section#banner div#intro q{
+    width:80vw;
+    font-size: 6vw;
+  }
+  header a{
+    font-size: 4vw;
+  }
+  section#contact{
+    div#form, div#contactDetails{
+      i{
+        font-size: 40px;
+      }
+      p{
+        font-size: 30px;
+        text-align: left;
+      }
+      width:100vw;
+      margin:30px auto;
+      float: none;
+    }
+
+  }
+
 }
