@@ -311,6 +311,7 @@ section#contact{
 
 }
 
+
 @media (max-width: 740px) {
   *{
     overflow-x: hidden;
@@ -324,7 +325,7 @@ section#contact{
       // background-size: 50%;
       background-attachment: scroll;
       background-position: top;
-      background-size: cover;
+      background-size: covex2r;
   }
   section#whatIdoForYou{
     flex-direction: column;

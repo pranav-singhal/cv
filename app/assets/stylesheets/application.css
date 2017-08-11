@@ -13,10 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
+  /*font-family:cursive, Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans,Helvetica, Arial, sans-serif;*/
+
   /*overflow-x: hidden;*/
 
 }
