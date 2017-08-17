@@ -313,11 +313,15 @@ section#contact{
 
 
 @media (max-width: 740px) {
-  *{
-    overflow-x: hidden;
-  }
+  // *{
+  //   overflow-x: hidden;
+  // }
   h1{
     font-size: 8vw;
+  }
+  header{
+    position: sticky;
+    top: 0px;
   }
 
   section#education, section#contact, section#whatIdoForYou, section#aboutMe, section#banner{
