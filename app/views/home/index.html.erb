@@ -1,14 +1,32 @@
 <%if @response==true %>
 <%session[:response]=false%>
 <script type="text/javascript">
-noty({text: 'Thanks for responding, I will get back to you as soon as i can', type: 'alert'});
+noty({
+  text: '',
+  type: 'success',
+  layout: "top",
+  template: '<div><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Thanks for responding!</div><div>I will get back to you as soon as I can</div>',
+  animation: {
+        open: 'animated bounceInDown', // Animate.css class names
+        close: 'animated bounceOutUp' // Animate.css class names
+    }
+}
+);
 
 </script>
 <%end%>
 <%if @response=="empty" %>
 <%session[:response]=false%>
 <script type="text/javascript">
-noty({text: 'sorry you seem to have submitted an empty form', type: 'alert'});
+noty({
+  text: 'Oops! you did not write anything!',
+  type: 'error',
+  animation: {
+        open: 'animated bounceInRight', // Animate.css class names
+        close: 'animated bounceOutRight' // Animate.css class names
+    }
+  }
+);
 
 </script>
 <%end%>

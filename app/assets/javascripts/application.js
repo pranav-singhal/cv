@@ -13,11 +13,9 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-//= require noty/jquery.noty
-//= require noty/layouts/bottom
-//= require noty/themes/default
+//= require jquery.noty.packaged.min.js
+
 
 $ = jQuery
 
 $.noty.defaults.timeout = 8000
-$.noty.defaults.layout = 'bottom'
