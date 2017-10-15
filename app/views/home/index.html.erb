@@ -46,6 +46,7 @@ noty({
       <li><a href="#aboutMeLink">About Me</a></li>
       <li><a href="#whatIdoLink">What I do</a></li>
       <li><a href="#educationLink">My Education</a></li>
+      <li><a href="#experienceLink">Experience</a></li>
       <li><a href="#contactLink">Get in Touch</a></li>
     </ul>
   </nav>
@@ -54,9 +55,8 @@ noty({
   <span id="aboutMeLink"></span>
   <h1 class="animated bounce infinite">About Me</h1>
   <p>
-    I am a freelance web-developer and I love working with software-development. I have recently
-    started working with rails and in my opinion, it is the
-    best framework for web-developtment out there.
+    I am a 2nd year student at Sri Venkateswara College and I love working with software-development(Specifically
+    web-development with RoR)
     Besides that, I like reading. My favourite author is Ayn Rand.
     I also like music and playing guitar. Hence, it should come as no surprise that I am
     a huge Clapton fan!
@@ -90,10 +90,11 @@ noty({
 <div id="div2">
   <h6><i class="fa fa-laptop" aria-hidden="true"></i></h6>
   <h2>What I do</h2>
-  <p>I am a freelance web-developer. I specialize in ruby on rails.
+  <p>As a web-developer, I specialize in ruby on rails.
     I have worked as a freelancer on freelancer.com and have recieved only positive reviews. Other than that,
-    I am currently working on several projects of my own; they are all loaded on my github profile- the link to which is
-    at the bottom of the site.
+    I am currently working on several projects of my own(like this website); they are all loaded on my github profile- the link to which is
+    at the bottom of the site. I am also studying General Relativity under the guidance of Dr. Patrick D. Gupta of the Department
+    of Physics and Astrophysics, North Campus, Delhi University.
 
 </p>
 
@@ -107,6 +108,74 @@ noty({
 </div>
 
 </section>
+
+</section>
+<section id="experience">
+  <span id="experienceLink"></span>
+  <h1 class="animated bounce infinite">My Experience</h1>
+<div>
+  <ul><h2>Projects I have worked on before:</h2>
+    <li><h3><a id="digilearnLink" onclick="openModal();currentSlide(1)" >Digilearn</a></h3>
+    <p>
+    A website I collaborated on that allows you to create online courses using an embedded text editor for students everywhere.
+    The website comes with its own interactice question answer forum where students can interact with the instructors, post
+    reviews to their courses and discuss their problems with other students. The website also has its own book store where
+    sellers can sell course related books so you don't have to go anywhere else. Click <a onclick="openModal();currentSlide(1)">here</a> on the link above to see pictures of the site.
+  </p>
+    </li>
+    <li>
+      <h3><a target="_blank" href="https://objecthub.io/">Objecthub.io</a></h3><h6>(beta)</h6>
+      <p>
+        I was hired as a freelancer(via Freelancer.com) to fix some of the javascript
+        on the front-end of the site and remove several bugs. You can checkout the reviews I recieved for the same <a target="_blank" href="https://www.freelancer.in/u/pranavsinghal">here</a>(they are only good).
+        Objecthub is an open source software development tool built by Max Rohde, CEO, Pureleap Pty. Ltd.
+      </p>
+    </li>
+    <li><h3><a target="_blank" href="http://htmlpreview.github.io/?https://github.com/pranav-singhal/codeplayer/blob/master/code_player.html">CodePlayer</a></h3>
+    <p>A code player that runs HTML,CSS and JavaScript and shows the output
+    alongside the written code; like jsbin.com</p>
+  </li>
+  <li><h3><a target="_blank" href="http://icicc-conf.com/">ICICC-Conference</a></h3>
+    <p>A website for the Guru Nanak Institue of Managements </p>
+  </li>
+  </ul>
+</div>
+<div>
+  <ul><h2>Projects I am currently working on:</h2>
+    <li><h3><a id="openmodal1">College Fest Website</a></h3>
+      <p>
+        I am a technical member of the Fine Arts Association, Sri Venkateswara College.
+        I am currently building the website for the college fest- NEXUS'17
+      </p>
+    </li>
+    <li><h3><a id="openmodal2">A social-netowork for talent-showcase</a></h3>
+      <p>
+        I am also a co-collaborator on a showcase website that allows for people
+        to post pictures and videos of their talents and others to vote on it. Due to a non-disclosure agreement,
+        that is all I can say about it for now.
+      </p>
+    </li>
+    <li>
+      <p>
+        I have also made several other projects such as a cross-platform chatting app, mini-games like  <a target="_blank" href="http://htmlpreview.github.io/?https://github.com/pranav-singhal/reaction_tester/blob/master/index.html
+">a reaction time tester</a> using javascript, <a target="_blank" href="http://htmlpreview.github.io/?https://github.com/pranav-singhal/minesweeper/blob/master/index.html
+">minesweeper</a>(still a work in progress)
+        and many others. Feel free to check them out on my <a target="_blank" href="https://github.com/pranav-singhal">github profile page.</a>
+      </p>
+    </li>
+    <li><p>
+      Other than software, I am currently studying tensor analysis
+      and General Relativity under the guidance of Dr. Patrick Das gupta, Professor
+      in the department of Physics and Astrophysics, University of Delhi
+    </p></li>
+
+  </ul>
+</div>
+
+</section>
+
+
+
 <section id="education">
   <span id="educationLink"></span>
   <h1 class="animated bounce infinite">My Educational Qualifications</h1>
@@ -164,3 +233,57 @@ noty({
        +91-9650906992</p>
   </div>
 </section>
+
+
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="Screen Shot 2017-09-26 at 9.49.05 PM.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="Screen Shot 2017-09-26 at 9.49.22 PM.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="3rdpic.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="Screen Shot 2017-09-26 at 9.49.05 PM.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+  </div>
+</div>
+<div id="myModal1" class="modal1">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Project Images Coming soon</p>
+  </div>
+</div>
+<div id="myModal2" class="modal2">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Project Images Coming soon</p>
+  </div>
+</div>
